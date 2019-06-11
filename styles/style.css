@@ -3,10 +3,19 @@
 
 body {
   display: grid;
-  grid-template-areas: 'header user-information trends feed who-follow" ads'; }
+  grid-template-areas: "header header header" "user-information feed  who-follow" "trends feed ads"; }
 
 nav {
   display: flex; }
+
+.nav {
+  justify-items: start; }
+
+.nav-right {
+  display: flex; }
+
+.icon-twitter {
+  justify-items: center; }
 
 .tweet-buttom {
   background-color: #F58EA8;

@@ -6,10 +6,21 @@ $color-white: #fff;
 body{
     display: grid;
     grid-template-areas: 
-        'header user-information trends feed who-follow" ads'
+        'header header header'
+        'user-information feed  who-follow'
+        'trends feed ads'
 }
 nav{
     display: flex;
+}
+.nav{
+    justify-items: start;
+}
+.nav-right{
+    display: flex;
+}
+.icon-twitter{
+    justify-items: center; 
 }
 .tweet-buttom{
     background-color: $color-pink;
