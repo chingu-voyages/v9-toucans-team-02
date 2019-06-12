@@ -1,0 +1,105 @@
+$color-pink: #F58EA8 ;
+$color-white: #fff;
+$color-grey: #66757f;
+$color-blue: #1da1f2;
+$color-body:  #e6ecf0;
+
+* {
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    margin: 0;
+    background-color:$color-body;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+header{
+    background-color: $color-white;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.25)
+}
+
+.header-nav{
+    background-color: $color-white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 12%;
+    margin-bottom: 0.2%;
+}
+
+nav a{
+    text-decoration: none;
+    color: $color-grey;
+    padding-left: 2%;
+    font-weight: bold;
+    font-size: 85%;
+}
+nav a:hover{
+    color: $color-pink;
+    padding-bottom: 2.3%;
+    border-bottom: 2px solid $color-pink;
+}
+nav i{
+    padding-right: 2%;
+}
+nav{
+    //float: left;
+  //  margin-left: 3px;
+   // margin-top: 17px;
+    //padding: 0;
+    width: 40%;
+}
+.home{
+    color: $color-pink;
+    padding-bottom: 2.3%;
+    border-bottom: 2px solid $color-pink;
+}
+.fa-search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20%;
+    color: $color-grey;
+  }
+.icon-twitter{
+    color: $color-blue;
+    font-size: 125%;
+    position: relative;
+    right: 8%;
+}
+.nav-right{
+    display: flex;
+}
+.profile-img{
+    border-radius: 50%;
+}
+.search-twitter{
+    border-radius: 21px;
+    border: 1px solid #e6ecf0;
+    background-color: $color-body;
+    margin: 2%;
+}
+.tweet-buttom{
+    background-color: $color-pink;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    //display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px;
+    color: $color-white;
+    padding: 6px 16px;
+    font-weight: bold;
+}
