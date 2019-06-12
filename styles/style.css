@@ -1,1 +1,97 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+<<<<<<< HEAD
+
+=======
+* {
+  box-sizing: border-box; }
+
+body {
+  display: grid;
+  margin: 0;
+  background-color: #e6ecf0;
+  font-family: "Segoe UI",Arial,sans-serif; }
+
+header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25); }
+
+.header-nav {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 12%;
+  margin-bottom: 0.2%; }
+
+nav a {
+  text-decoration: none;
+  color: #66757f;
+  padding-left: 2%;
+  font-weight: bold;
+  font-size: 85%; }
+
+nav a:hover {
+  color: #F58EA8;
+  padding-bottom: 2.3%;
+  border-bottom: 2px solid #F58EA8; }
+
+nav i {
+  padding-right: 2%; }
+
+nav {
+  width: 40%; }
+
+.home {
+  color: #F58EA8;
+  padding-bottom: 2.3%;
+  border-bottom: 2px solid #F58EA8; }
+
+.fa-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20%;
+  color: #66757f; }
+
+.icon-twitter {
+  color: #1da1f2;
+  font-size: 125%;
+  position: relative;
+  right: 8%; }
+
+.nav-right {
+  display: flex; }
+
+.profile-img {
+  border-radius: 50%; }
+
+.search-twitter {
+  border-radius: 21px;
+  border: 1px solid #e6ecf0;
+  background-color: #e6ecf0;
+  margin: 2%; }
+
+.tweet-buttom {
+  background-color: #F58EA8;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100px;
+  color: #fff;
+  padding: 6px 16px;
+  font-weight: bold; }
+>>>>>>> feature-navigation
+
+/*# sourceMappingURL=style.css.map */
