@@ -20,9 +20,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.2%;
     border-bottom: 1px solid rgba(0,0,0,0.25)
 }
+
 .header-nav{
     background-color: $color-white;
     width: 100%;
@@ -32,13 +32,20 @@ header{
     justify-content: space-between;
     margin-left: 10%;
     margin-right: 12%;
+    margin-bottom: 0.2%;
 }
+
 nav a{
     text-decoration: none;
     color: $color-grey;
     padding-left: 2%;
     font-weight: bold;
     font-size: 85%;
+}
+nav a:hover{
+    color: $color-pink;
+    padding-bottom: 2.3%;
+    border-bottom: 2px solid $color-pink;
 }
 nav i{
     padding-right: 2%;
@@ -49,6 +56,11 @@ nav{
    // margin-top: 17px;
     //padding: 0;
     width: 40%;
+}
+.home{
+    color: $color-pink;
+    padding-bottom: 2.3%;
+    border-bottom: 2px solid $color-pink;
 }
 .fa-search{
     position: absolute;
@@ -73,6 +85,7 @@ nav{
     border-radius: 21px;
     border: 1px solid #e6ecf0;
     background-color: $color-body;
+    margin: 2%;
 }
 .tweet-buttom{
     background-color: $color-pink;
@@ -88,4 +101,5 @@ nav{
     border-radius: 100px;
     color: $color-white;
     padding: 6px 16px;
+    font-weight: bold;
 }
