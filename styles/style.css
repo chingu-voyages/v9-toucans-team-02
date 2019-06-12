@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  display: grid;
+  margin: 0;
+  background-color: #e6ecf0; }
+
+header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+nav a {
+  text-decoration: none;
+  color: #66757f; }
+
+.nav-right {
+  display: flex; }
+
+.profile-img {
+  border-radius: 50%; }
+
+.tweet-buttom {
+  background-color: #F58EA8;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100px;
+  color: #fff;
+  padding: 6px 16px; }
+
+/*# sourceMappingURL=style.css.map */

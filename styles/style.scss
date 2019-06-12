@@ -1,0 +1,52 @@
+$color-pink: #F58EA8 ;
+$color-white: #fff;
+$color-grey: #66757f;
+
+* {
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    margin: 0;
+    background-color: #e6ecf0;
+}
+header{
+    background-color: $color-white;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: $color-grey;
+    
+}
+.nav{
+
+}
+.icon-twitter{
+
+}
+.nav-right{
+    display: flex;
+}
+.profile-img{
+    border-radius: 50%;
+}
+.tweet-buttom{
+    background-color: $color-pink;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    //display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px;
+    color: $color-white;
+    padding: 6px 16px;
+}
