@@ -1,26 +1,39 @@
 $color-pink: #F58EA8 ;
 $color-white: #fff;
+$color-grey: #66757f;
+
 * {
     box-sizing: border-box;
 }
 body{
     display: grid;
-    grid-template-areas: 
-        'header header header'
-        'user-information feed  who-follow'
-        'trends feed ads'
+    margin: 0;
+    background-color: #e6ecf0;
 }
-nav{
+header{
+    background-color: $color-white;
+    width: 100%;
+    position: fixed;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: $color-grey;
+    
 }
 .nav{
-    justify-items: start;
+
+}
+.icon-twitter{
+
 }
 .nav-right{
     display: flex;
 }
-.icon-twitter{
-    justify-items: center; 
+.profile-img{
+    border-radius: 50%;
 }
 .tweet-buttom{
     background-color: $color-pink;
@@ -30,9 +43,10 @@ nav{
     text-align: center;
     text-decoration: none;
     //display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 100px;
     color: $color-white;
+    padding: 6px 16px;
 }

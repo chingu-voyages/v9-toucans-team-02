@@ -3,19 +3,26 @@
 
 body {
   display: grid;
-  grid-template-areas: "header header header" "user-information feed  who-follow" "trends feed ads"; }
+  margin: 0;
+  background-color: #e6ecf0; }
 
-nav {
-  display: flex; }
+header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 
-.nav {
-  justify-items: start; }
+nav a {
+  text-decoration: none;
+  color: #66757f; }
 
 .nav-right {
   display: flex; }
 
-.icon-twitter {
-  justify-items: center; }
+.profile-img {
+  border-radius: 50%; }
 
 .tweet-buttom {
   background-color: #F58EA8;
@@ -24,10 +31,11 @@ nav {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 100px;
-  color: #fff; }
+  color: #fff;
+  padding: 6px 16px; }
 
 /*# sourceMappingURL=style.css.map */
