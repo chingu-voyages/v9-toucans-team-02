@@ -7,78 +7,179 @@ $color-body:  #e6ecf0;
 * {
     box-sizing: border-box;
 }
+// body{
+//     display: grid;
+//     margin: 0;
+//     background-color:$color-body;
+//     font-family: "Segoe UI",Arial,sans-serif;
+// }
+// header{
+//     background-color: $color-white;
+//     width: 100%;
+//     position: fixed;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     border-bottom: 1px solid rgba(0,0,0,0.25)
+// }
+
+// .header-nav{
+//     background-color: $color-white;
+//     width: 100%;
+//     text-align: center;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     margin-left: 10%;
+//     margin-right: 12%;
+//     margin-bottom: 0.2%;
+// }
+
+// nav a{
+//     text-decoration: none;
+//     color: $color-grey;
+//     padding-left: 2%;
+//     font-weight: bold;
+//     font-size: 85%;
+// }
+// nav a:hover{
+//     color: $color-pink;
+//     padding-bottom: 2.3%;
+//     border-bottom: 2px solid $color-pink;
+// }
+// nav i{
+//     padding-right: 2%;
+// }
+// nav{
+//     //float: left;
+//   //  margin-left: 3px;
+//    // margin-top: 17px;
+//     //padding: 0;
+//     width: 40%;
+// }
+// .home{
+//     color: $color-pink;
+//     padding-bottom: 2.3%;
+//     border-bottom: 2px solid $color-pink;
+// }
+// .fa-search{
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     right: 20%;
+//     color: $color-grey;
+//   }
+// .icon-twitter{
+//     color: $color-blue;
+//     font-size: 125%;
+//     position: relative;
+//     right: 8%;
+// }
+// .nav-right{
+//     display: flex;
+// }
+// .profile-img{
+//     border-radius: 50%;
+// }
+// .search-twitter{
+//     border-radius: 21px;
+//     border: 1px solid #e6ecf0;
+//     background-color: $color-body;
+//     margin: 2%;
+// }
+// .tweet-buttom{
+//     background-color: $color-pink;
+//     border: none;
+//     color: white;
+//     padding: 15px 32px;
+//     text-align: center;
+//     text-decoration: none;
+//     //display: inline-block;
+//     font-size: 14px;
+//     margin: 4px 2px;
+//     cursor: pointer;
+//     border-radius: 100px;
+//     color: $color-white;
+//     padding: 6px 16px;
+//     font-weight: bold;
+// }
+
+/* Nav */
+
 body{
-    display: grid;
+    margin: 0px;
+    background: $color-body;
+}
+.container{
     margin: 0;
-    background-color:$color-body;
-    font-family: "Segoe UI",Arial,sans-serif;
-}
-header{
-    background-color: $color-white;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(0,0,0,0.25)
-}
-
-.header-nav{
-    background-color: $color-white;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 12%;
-    margin-bottom: 0.2%;
-}
-
-nav a{
-    text-decoration: none;
-    color: $color-grey;
-    padding-left: 2%;
-    font-weight: bold;
-    font-size: 85%;
-}
-nav a:hover{
-    color: $color-pink;
-    padding-bottom: 2.3%;
-    border-bottom: 2px solid $color-pink;
-}
-nav i{
-    padding-right: 2%;
+    padding: 0;
+    display: grid;
+    grid-gap: 1%;
+    // border: 5px solid black;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 nav{
-    //float: left;
-  //  margin-left: 3px;
-   // margin-top: 17px;
-    //padding: 0;
-    width: 40%;
+    display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    // grid-gap: 120px;
+    border: 2px solid pink;
+    grid-column: 1 / -1;
+    padding: 0 15% 0 15%;
+    background: $color-white;
+    font-weight: bold;
+    font-size: 85%;
+    grid-template-columns: auto 2fr auto;
+
+    a{
+        width: 100%;
+        text-decoration: none;
+        color: $color-grey;
+    }
+    a:hover{
+        color: $color-pink;
+        border-bottom: 2px solid $color-pink;
+    }
+    div{
+        display: grid;
+        grid-gap: 10px;
+        // grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-auto-flow: column;
+    }
+    i{
+        padding-right: 3px;
+    }
+}
+.nav-left{
+    display: grid;
+    grid-gap: 20px;
+    // grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
 }
 .home{
     color: $color-pink;
     padding-bottom: 2.3%;
     border-bottom: 2px solid $color-pink;
 }
+//How to make an item absolute according to another item
 .fa-search{
-    position: absolute;
-    top: 50%;
     transform: translateY(-50%);
-    right: 20%;
     color: $color-grey;
+    // position: absolute;
+    // top: 5%;
+    // right: 25.5%;
   }
-.icon-twitter{
+  .icon-twitter{
     color: $color-blue;
     font-size: 125%;
-    position: relative;
-    right: 8%;
-}
-.nav-right{
-    display: flex;
-}
-.profile-img{
+    // position: relative;
+    // right: 8%;
+  }
+  .profile-img{
     border-radius: 50%;
 }
 .search-twitter{
@@ -91,7 +192,6 @@ nav{
     background-color: $color-pink;
     border: none;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     //display: inline-block;
@@ -103,3 +203,65 @@ nav{
     padding: 6px 16px;
     font-weight: bold;
 }
+
+/* end of Nav */
+/* User-info */
+.user-information{
+    grid-column: 1 /1;
+    margin-left: 20%;
+    background: $color-pink;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    .user-bottom{
+        background: $color-white;
+        width: 100%;
+    }
+    .user-img{
+    border-radius: 50%;
+    width: 30%;
+}
+}
+
+
+
+
+
+/* trends */
+
+.trends{
+    background: $color-white;
+    grid-column: 1/1;
+    align-items: center;
+    justify-items: center;
+    margin-left: 20%;
+}
+
+
+/* feed */
+.feed{
+    background: $color-white;
+    grid-column: 2/2;
+    grid-row: 2;
+    align-items: center;
+    justify-items: center;
+}
+
+/* who-follow */
+.who-follow{
+    background: $color-white;
+    grid-column: 3/-1;
+    grid-row: 2;
+    margin-right: 20%;
+}
+
+/* ads */
+.ads{
+    background: $color-white;
+    grid-column: 3/-1;
+    grid-row: 3;
+    height: 20%;
+    margin-right: 20%;
+}
+/* end of user-info */
