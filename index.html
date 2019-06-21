@@ -5,45 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="styles/style.css">
-=======
-    <link rel="stylesheet" href="/styles/style.css">
->>>>>>> 23560e6b09a40556fc0828d8c628ca993ef0f52d
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/user-info.css">
     <title>Twitter</title>
 </head>
 
 <body>
-    <header>
-        <div class="header-nav">
-            <nav>
-                <div class="nav">
-                    <a class="home" href="#"><i class="fas fa-home"></i>Home</a>
-                    <a class="moment" href="#"><i class="fas fa-bolt"></i>Moments</a>
-                    <a class="notifications" href="#"><i class="far fa-bell"></i>Notifications</a>
-                    <a class="messages" href="#"><i class="far fa-envelope"></i>Messages</a>
-                </div>
-               
-            </nav>
+    <div class="container">
+
+        <nav class="navbar">
+            <div class="nav-left">
+                <a class="home" href="#"><i class="fas fa-home"></i>Home</a>
+                <a class="moment" href="#"><i class="fas fa-bolt"></i>Moments</a>
+                <a class="notifications" href="#"><i class="far fa-bell"></i>Notifications</a>
+                <a class="messages" href="#"><i class="far fa-envelope"></i>Messages</a>
+            </div>
             <div class="icon-twitter">
-                    <i class="fab fa-twitter"></i>
-                </div>
-                <div class="nav-right">
-                        <input class="search-twitter" type="text" placeholder="Search Twitter" name="search">
-                        <span type="submit">
-                            <i class="fa fa-search"></i>
-                        </span>
-                    <img class="profile-img" src="https://placedog.net/40/40/?id=4" alt="White dog">
-                    <button class="tweet-buttom" type="submit">Tweet</button>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="nav-right">
+                <input class="nav-left search-twitter" type="text" placeholder="Search Twitter" name="search">
+                <span type="submit">
+                    <i class="fa fa-search"></i>
+                </span>
+                <img class="profile-img" src="https://placedog.net/40/40/?id=4" alt="White dog">
+                <button class="tweet-buttom" type="submit">Tweet</button>
+            </div>
+        </nav>
+        <section class="user-information">
+            <div class="user-top"></div>
+            <div class="user-bottom">
+                <img class="user-img" src="https://placedog.net/40/40/?id=4" alt="White dog">
+                <h3 class="name">Ana Andrade</h3>
+                <p>@anhacorrea</p>
+                <div class="info-user">
+                    <a href="#" class="info">Tweets <span>4</span></a>
+                    <a href="#" class="info">Following <span>25</span></a>
+                    <a href="#" class="info">Followers <span>7 </span></a>
                 </div>
             </div>
-    </header>
-    <section class="user-information"></section>
-    <section class="trends"></section>
-    <section class="feed"></section>
-    <section class="who-follow"></section>
-    <section class="ads"></section>
+        </section>
+        <section class="trends">
+            <h3>Trends for you <span>Change</span></h3>
+            <a class="trends numbers">#ChildsPlayMovie</a>
+            <p class="trends">Time to play. Chucky returns to theaters tomorrow night.</p>
+            <p class="trends numbers">Promoted by Child's Play Movie</p>
+            <a href="#" class="trends">#PoseFX</a>
+            <p class="trends numbers">40.4K Tweets</p>
+            <a href="#" class="trends">#RHOBH</a>
+            <p class="trends numbers">8,312 Tweets</p>
+            <a href="#" class="trends">#USMNT</a>
+            <p class="trends numbers">10.3K Tweets</p>
+            <a href="#" class="trends">Zardes</a>
+            <p class="trends numbers">6,777 Tweets</p>
+            <a href="#" class="trends">Marco</a>
+            <p class="trends numbers">89.4K Tweets</p>
+            <a href="#" class="trends">#HowIFightDepression</a>
+            <p class="trends numbers">1,487 Tweets</p>
+            <a href="#" class="trends">Guyana</a>
+            <p class="trends numbers">11K Tweets</p>
+            <a href="#" class="trends">Blanca</a>
+            <p class="trends numbers">56K Tweets</p>
+            <a href="#" class="trends">#ICantBeTheOnlyOne</a>
+            <p class="trends numbers">7,973 Tweets</p>
+        </section>
+        <section class="feed news">
+                <img class="feed-img" src="https://placedog.net/40/40/?id=4" alt="White dog">
+                <a href="#" class="user-feed">Ana Andrade</a>
+                <p>@anhacorrea</p>
+                <p class="time">30m</p>
+                <p class="feed">These high-altitude balloons could send internet signal to Kenya's most remote areas</p>
+        </section>
+        <section class="who-follow">
+            <h3>Who to follow <span>  · Refresh </span> <span> · View all</span></h3>
+        </section>
+        <section class="ads">
+            <p>© 2019 Twitter  About  Help Center  Terms</p>
+            <p>Privacy policy  Cookies  Ads info  Brand  Blog</p>
+            <p>Status  Apps  Jobs  Marketing Businesses</p>
+            <p>Developers</p>
+        </section>
+
+    </div>
+
 </body>
 
 </html>
