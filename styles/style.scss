@@ -214,6 +214,7 @@ nav{
     grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-items: center;
+    height: 200px;
     .user-bottom{
         background: $color-white;
         width: 100%;
@@ -243,9 +244,11 @@ nav{
 .feed{
     background: $color-white;
     grid-column: 2/2;
-    grid-row: 2;
+    grid-row: 2 / 10;
     align-items: center;
     justify-items: center;
+   // display: grid;
+
 }
 
 /* who-follow */
@@ -265,3 +268,27 @@ nav{
     margin-right: 20%;
 }
 /* end of user-info */
+
+.img-feed{
+    border: 1px solid lightgrey;
+    border-radius: 2%;
+    height: 506px;
+    width: 506px;
+    
+}
+.feed-img{
+    border-radius: 50%;
+}
+div.feed-img{
+    padding-left: 10px;
+}
+.feed-items{
+    border-bottom: 1px solid lightgrey;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    padding: 10px;
+}
+.feed-items:hover{
+    background: #F5F8FA;
+    
+}
